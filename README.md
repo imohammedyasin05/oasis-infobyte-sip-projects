@@ -119,11 +119,6 @@ Throughout this internship, I have significantly improved my ability to:
 ## 🙌 Acknowledgment
 Special thanks to **Oasis Infobyte** for providing this incredible platform to enhance my web development skills through real-world projects.
 
-## 📧 Contact
-**[Your Name]**  
-📧 [your.email@example.com](mailto:your.email@example.com)  
-🔗 [LinkedIn Profile](https://linkedin.com/in/yourprofile)  
-💻 [GitHub Profile](https://github.com/yourusername)
 
 ---
 *Developed with ❤️ as part of the Oasis Infobyte Internship.*

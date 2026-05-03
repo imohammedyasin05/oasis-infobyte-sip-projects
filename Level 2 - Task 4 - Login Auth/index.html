@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureAuth | Enterprise Access Control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="logo">
+                    <i data-lucide="shield-check"></i>
+                    <span>SecureAuth</span>
+                </div>
+                <h1 id="formTitle">Welcome Back</h1>
+                <p id="formSubtitle">Please enter your credentials to continue</p>
+            </div>
+
+            <form id="authForm" class="auth-form">
+                <div class="input-group" id="nameGroup" style="display: none;">
+                    <label for="name">Full Name</label>
+                    <div class="input-field">
+                        <i data-lucide="user"></i>
+                        <input type="text" id="name" placeholder="John Doe">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-field">
+                        <i data-lucide="mail"></i>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-field">
+                        <i data-lucide="lock"></i>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                        <button type="button" class="toggle-pass" id="togglePass">
+                            <i data-lucide="eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="errorMessage" class="error-msg"></div>
+
+                <button type="submit" id="submitBtn" class="submit-btn">
+                    <span>Sign In</span>
+                    <i data-lucide="arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="auth-footer">
+                <p id="toggleText">Don't have an account? <a href="#" id="authToggle">Create one</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard (Hidden by default) -->
+    <div id="dashboard" class="dashboard-wrapper" style="display: none;">
+        <nav class="dash-nav">
+            <div class="logo"><i data-lucide="shield-check"></i> SecureAuth</div>
+            <button id="logoutBtn" class="logout-btn"><i data-lucide="log-out"></i> Logout</button>
+        </nav>
+        <main class="dash-content">
+            <div class="welcome-card">
+                <h1 id="userGreeting">Welcome!</h1>
+                <p>You have successfully authenticated with our secure system.</p>
+                <div class="user-details">
+                    <div class="detail-item">
+                        <i data-lucide="calendar"></i>
+                        <span>Last Login: Today, 7:34 PM</span>
+                    </div>
+                    <div class="detail-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>Location: New Delhi, India</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

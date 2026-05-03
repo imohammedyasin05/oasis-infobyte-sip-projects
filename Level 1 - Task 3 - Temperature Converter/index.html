@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempVibe | Precision Temperature Converter</title>
+    <meta name="description" content="Convert between Celsius, Fahrenheit, and Kelvin with precision and style.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="background-blobs">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+
+        <div class="converter-card" role="main">
+            <header class="card-header">
+                <div class="logo-wrap">
+                    <i data-lucide="thermometer-snowflake" class="logo-icon"></i>
+                    <h1>Temp<span>Vibe</span></h1>
+                </div>
+                <p>Professional Grade Conversion</p>
+            </header>
+
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="tempInput">Enter Temperature</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="tempInput" placeholder="0.00" step="0.01">
+                        <span class="input-glow"></span>
+                    </div>
+                </div>
+
+                <div class="config-grid">
+                    <div class="input-group">
+                        <label for="fromUnit">From</label>
+                        <select id="fromUnit">
+                            <option value="C">Celsius (°C)</option>
+                            <option value="F">Fahrenheit (°F)</option>
+                            <option value="K">Kelvin (K)</option>
+                        </select>
+                    </div>
+                    <div class="swap-btn" id="swapUnits" title="Swap Units">
+                        <i data-lucide="repeat"></i>
+                    </div>
+                    <div class="input-group">
+                        <label for="toUnit">To</label>
+                        <select id="toUnit">
+                            <option value="F">Fahrenheit (°F)</option>
+                            <option value="C" selected>Celsius (°C)</option>
+                            <option value="K">Kelvin (K)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <div class="result-display">
+                    <span id="resultValue">--</span>
+                    <span id="resultUnit"></span>
+                </div>
+                <div class="formula-box">
+                    <i data-lucide="info" size="14"></i>
+                    <span id="formulaText">Enter a value to see formula</span>
+                </div>
+            </div>
+
+            <button id="convertBtn" class="convert-btn">
+                <span>Convert Now</span>
+                <i data-lucide="zap"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

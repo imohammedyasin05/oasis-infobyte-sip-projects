@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Rivers | Creative Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Alex Rivers, a Full Stack Developer specializing in React, Node.js, and high-performance web applications.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <a href="#" class="logo" aria-label="Alex Rivers Home">AR<span>.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link nav-contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Mobile Menu" aria-expanded="false">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="greeting">Hi there, I'm</span>
+                    <h1 class="name">Alex Rivers</h1>
+                    <h2 class="role">I am a <span id="typed"></span></h2>
+                    <p class="hero-text">Building exceptional digital experiences that combine robust engineering with pixel-perfect design.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    </div>
+                    <div class="social-hero">
+                        <a href="#"><i data-lucide="github"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="blob"></div>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" alt="Alex Rivers" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="sub-title">Discovery</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a Full Stack Developer with over 5 years of experience in creating modern web applications. I specialize in React, Node.js, and Cloud Architecture.</p>
+                        <p>My approach is focused on performance, accessibility, and user-centric design. I love solving complex problems and turning ideas into reality through clean, maintainable code.</p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <strong>Based in:</strong>
+                                <span>London, UK</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Experience:</strong>
+                                <span>5+ Years</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary"><i data-lucide="download"></i> Download Resume</a>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>20+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p>Tech Stack</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>100%</h3>
+                            <p>Dedication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-title-wrap text-center">
+                    <span class="sub-title">Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>React / Next.js</span><span>95%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>TypeScript</span><span>90%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Tailwind CSS</span><span>85%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Node.js</span><span>88%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>PostgreSQL</span><span>80%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>GraphQL</span><span>75%</span></div>
+                                <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="sub-title">Portfolio</span>
+                    <h2 class="section-title">Featured Work</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600" alt="E-commerce Dashboard">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#"><i data-lucide="external-link"></i></a>
+                                    <a href="#"><i data-lucide="github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Nexus Commerce</h3>
+                            <p>A full-featured e-commerce platform with real-time inventory and analytics.</p>
+                            <div class="project-tags">
+                                <span>Next.js</span>
+                                <span>Stripe</span>
+                                <span>Prisma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600" alt="AI Content Tool">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#"><i data-lucide="external-link"></i></a>
+                                    <a href="#"><i data-lucide="github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Writer Pro</h3>
+                            <p>SaaS platform using OpenAI to generate high-quality marketing copy.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>OpenAI</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600" alt="Social App">
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#"><i data-lucide="external-link"></i></a>
+                                    <a href="#"><i data-lucide="github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>VibeSocial</h3>
+                            <p>Modern social media dashboard with focus on data visualization.</p>
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>D3.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h2 class="section-title">Let's work <span>together</span></h2>
+                        <p>Have a project in mind? Reach out and let's build something amazing.</p>
+                        <div class="contact-methods">
+                            <div class="method">
+                                <div class="icon-wrap"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <h4>Email Me</h4>
+                                    <p>alex@rivers.dev</p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <div class="icon-wrap"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>London, United Kingdom</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Alex Rivers. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#"><i data-lucide="github"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

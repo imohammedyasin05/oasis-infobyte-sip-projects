@@ -60,14 +60,6 @@ This repository contains a comprehensive collection of web development projects 
 
 ---
 
-## 📸 Screenshots
-| Project | Preview |
-| :--- | :--- |
-| Landing Page | ![Landing Page](./screenshots/landing.png) |
-| Portfolio | ![Portfolio](./screenshots/portfolio.png) |
-| Pizza App | ![Pizza App](./screenshots/pizza.png) |
-
----
 
 ## ⚙️ Installation & Setup
 
